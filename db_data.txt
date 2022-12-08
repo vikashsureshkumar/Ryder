@@ -1,0 +1,102 @@
+-- use ryder;
+
+-- create table drivers(
+-- 	id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+--     first_name varchar(255) NOT NULL,
+--     last_name varchar(255) NOT NULL,
+--     address varchar(255),
+--     city varchar(255),
+--     dob DATETIME,
+--     created_at DATETIME,
+--     updated_at DATETIME
+-- )
+
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("David", "Miller", "Street 5", "City 5", "1999-08-01 00:10:01", "2021-01-01 10:00:11", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Virat", "Kohli", "Street 6", "City 6", "2000-01-01 00:10:02", "2021-01-02 10:00:11", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Sachin", "Tendulkar", "Street 7", "City 7", "2000-02-01 00:10:03", "2021-01-03 03:00:01", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Wade", "Mile", "Street 8", "City 8", "1998-03-01 00:10:04", "2021-01-04 04:00:02", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Wade", "Wilson", "Street 9", "City 9", "1998-04-01 00:10:05", "2021-01-05 05:00:03", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Jackie", "Chan", "Street 10", "City 10", "2000-05-01 01:00:06", "2021-01-06 06:00:04", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Von", "Tun", "Street 11", "City 11", "2001-06-01 02:00:07", "2021-01-07 07:00:05", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Charlotte", "Dave", "Street 12", "City 12", "2001-07-01 03:00:08", "2021-01-08 08:00:06", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Seth", "Meve", "Street 13", "City 13", "2001-08-01 04:00:09", "2021-01-09 09:00:07", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Ava", "Miller", "Street 14", "City 14", "2002-06-01 05:00:10", "2021-01-10 10:00:08", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Sophia", "George", "Street 15", "City 15", "2002-07-01 06:00:10", "2021-01-11 10:00:09", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Sheldon", "Cooper", "Street 16", "City 16", "2002-08-01 07:00:11", "2021-02-11 07:00:10", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Juliana", "Scott", "Street 17", "City 17", "2002-09-01 08:00:12", "2021-01-21 06:00:20", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Olivia", "Emma", "Street 18", "City 18", "2002-10-01 08:00:13", "2021-02-01 04:00:30", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Hannah", "Montana", "Street 19", "City 19", "2002-11-01 09:00:14", "2021-02-03 03:00:40", NULL);
+-- INSERT into drivers(first_name, last_name, address, city, dob, created_at, updated_at) values("Mia", "Isabella", "Street 20", "City 20", "2002-11-01 10:00:15", "2021-02-05 02:00:50", NULL);
+
+
+-- select * from drivers
+
+-- create table driver_realtime_location(
+-- 	id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+--     location varchar(255) NOT NULL,
+-- 	updated_at DATETIME,
+--     driver_id int,
+--    status int
+--     FOREIGN KEY(driver_id) REFERENCES drivers(id)
+-- )
+
+
+
+-- INSERT INTO driver_realtime_location(driver _id, location, updated_at) values(5, "12.5271592, 78.2022147", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(2, "12.5221875, 78.2193125", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(3, "12.992254, 77.779793", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(4, "12.9644730, 77.8153610", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(6, "13.082546, 80.149362", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(7, "12.694008, 77.943506", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(8, "10.788731, 78.6720988", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(9, "10.752250, 78.691972", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(10, "10.8151847,78.6536906", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(11, "10.79545, 78.71153", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(12, "10.783016, 78.788349", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(14, "10.814941, 78.66482", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(15, "10.777693, 78.808769", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(13, "10.7758671,78.6699237", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(16, "10.785727,78.73628", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(17, "10.801519,78.734689", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(18, "10.821958,78.6771147", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(19, "10.808736,78.68662", '2022-10-20 10:00:01', 0);
+-- INSERT INTO driver_realtime_location(driver_id, location, updated_at) values(20, "10.7722437,78.805406", '2022-10-20 10:00:01', 0);
+
+-- select * from driver_realtime_location;
+
+
+-- create table rydes(
+--  	id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+-- 	pickup_time DATETIME,
+--     pickup_location varchar(255) not null,
+--     pickup_address varchar(255) not null,
+--     dropoff_location varchar(255) not null,
+--     dropoff_address varchar(255) not null,
+--     estimated_ride_duration varchar(255) not null,
+--     driver_id int,
+--     status int
+-- )
+
+
+-- INSERT into rydes(pickup_time, pickup_location, pickup_address, dropoff_location, dropoff_address, estimated_ride_duration, driver_id, status) values
+-- ('2022-10-20 10:02:01', '10.8151847,78.6536906', 'Uyyakondan Thirumalai', '10.783016, 78.788349', 'Jainagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.8151847,78.6536906', 'Uyyakondan Thirumalai', '10.821958,78.6771147', 'Uraiyur', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.8151847,78.6536906', 'Uyyakondan Thirumalai', '10.801519,78.734689', 'OilMill', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.8151847,78.6536906', 'Uyyakondan Thirumalai', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.783016, 78.788349', 'Jainagar', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.801519,78.734689', 'OilMill', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.821958,78.6771147', 'Uraiyur', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.8090369,78.6309354', 'Somarasampettai', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7722437,78.805406', 'Anna Valaivu', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7722437,78.805406', 'Anna Valaivu', '10.783016, 78.788349', 'Jainagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7722437,78.805406', 'Anna Valaivu', '10.785727,78.73628', 'Melakalkandarkottai', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7722437,78.805406', 'Anna Valaivu', '10.7758671,78.6699237', 'Edamalaipatti Pudur', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7722437,78.805406', 'Anna Valaivu', '10.752250, 78.691972', 'KK Nagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7722437,78.805406', 'Anna Valaivu', '10.814021,78.682453', 'Anna Nagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7672912,78.6831671', 'LIC Colony', '10.783016, 78.788349', 'Jainagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7672912,78.6831671', 'LIC Colony', '10.7866986,79.1178204', 'Singaperumal Kulam', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7672912,78.6831671', 'LIC Colony', '10.7622366,79.1329329', 'Yagappa Nagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7622366,79.1329329', 'Yagappa Nagar', '10.783016, 78.788349', 'Jainagar', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7622366,79.1329329', 'Yagappa Nagar', '10.7672912,78.6831671', 'LIC Colony', '2022-10-20 10:22:01', Null, 0),
+-- ('2022-10-20 10:02:01', '10.7622366,79.1329329', 'Yagappa Nagar', '10.79545, 78.71153', 'Senthaneerpuram', '2022-10-20 10:22:01', Null, 0);
+-- select * from rydes
